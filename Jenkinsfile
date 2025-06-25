@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build Image') {
       steps {
-        docker build -t myapp .
+        docker build -t myapp ./dockerfile
       }
     }
     stage('Stop and start Containe') {
