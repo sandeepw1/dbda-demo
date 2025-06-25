@@ -1,12 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage("Build Image") {
+    stage('Build Image') {
       steps {
         docker build -t myapp .
       }
     }
-    stage("Stop and start Container") {
+    stage('Stop and start Containe') {
           steps {
             docker stop web1
             docker rm web1 
